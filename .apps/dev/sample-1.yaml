@@ -16,7 +16,7 @@ spec:
   source:
     path: ovarlays/dev/sample-1
     repoURL: https://github.com/ShotaKitazawa/reviewapp-operator-demo-infra
-    targetRevision: main
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true
