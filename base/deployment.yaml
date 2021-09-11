@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: demo
-          image: reviewapp-operator-demo-app:latest
+          image: nginx:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
