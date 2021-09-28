@@ -11,7 +11,8 @@ metadata:
 spec:
   destination:
     namespace: sample-1
-  project: ""
+    server: https://kubernetes.default.svc
+  project: default
   source:
     path: overlays/dev/sample-1
     repoURL: https://github.com/ShotaKitazawa/reviewapp-operator-demo-infra
