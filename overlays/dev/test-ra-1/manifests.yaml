@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:
+          image: nginx:27dae2dbb04f70f09a8fa39aea8d4efb65c60753
