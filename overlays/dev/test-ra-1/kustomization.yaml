@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: demo-dev-<no value>-2
 bases:
 - ../../../base
-- ./ns.yaml
+- ./manifests.yaml
