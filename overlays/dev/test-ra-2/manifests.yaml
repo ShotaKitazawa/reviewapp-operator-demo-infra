@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo
+  annotations:
+    step: "1"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+      annotations:
+        commit: 27dae2dbb04f70f09a8fa39aea8d4efb65c60753
+    spec:
+      containers:
+        - name: demo
+          image: nginx
