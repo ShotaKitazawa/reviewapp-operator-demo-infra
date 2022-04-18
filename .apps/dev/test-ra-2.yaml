@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    dreamkast.cloudnativedays.jp/app-commit-hash: 27dae2dbb04f70f09a8fa39aea8d4efb65c60753
+    dreamkast.cloudnativedays.jp/app-organization: ShotaKitazawa
+    dreamkast.cloudnativedays.jp/app-repository: reviewapp-operator-demo-app
+  name: test-ra-2
+  namespace: argocd
+spec:
+  destination:
+    namespace: test-ra-2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: overlays/dev/test-ra-2
+    repoURL: https://github.com/ShotaKitazawa/reviewapp-operator-demo-infra
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
