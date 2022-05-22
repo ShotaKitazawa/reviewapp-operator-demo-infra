@@ -13,8 +13,8 @@ spec:
       labels:
         app: nginx
       annotations:
-        commit: 
+        commit: updated
     spec:
       containers:
         - name: nginx
-          image: nginx:
+          image: nginx:updated
