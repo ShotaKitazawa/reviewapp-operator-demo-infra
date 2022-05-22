@@ -6,6 +6,7 @@ metadata:
     dreamkast.cloudnativedays.jp/app-organization: ShotaKitazawa
     dreamkast.cloudnativedays.jp/app-repository: reviewapp-operator-demo-app
     test: test
+    test2: test2
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   name: sample-2
