@@ -12,7 +12,9 @@ spec:
     metadata:
       labels:
         app: nginx
+      annotations:
+        commit: 
     spec:
       containers:
-        - name: nginx
-          image: nginx:
+        - name: demo
+          image: nginx
